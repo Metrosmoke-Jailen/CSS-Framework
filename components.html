@@ -1,0 +1,157 @@
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <title>Ember CSS | Component Testing</title>
+
+  <link rel="stylesheet" href="ember.css">
+</head>
+
+<body>
+
+  <main>
+
+    <h1>Ember CSS</h1>
+    <p>Component Testing Playground</p>
+
+    <hr>
+
+    <!-- BUTTONS -->
+
+    <section>
+      <h2>Buttons</h2>
+
+      <p>
+        <button class="ember-btn">
+          Primary
+        </button>
+
+        <button class="ember-btn ember-btn--secondary">
+          Secondary
+        </button>
+
+        <button class="ember-btn ember-btn--small">
+          Small
+        </button>
+
+        <a class="ember-btn" href="#">
+          Link Button
+        </a>
+
+        <button class="ember-btn" disabled>
+          Disabled
+        </button>
+
+        <a class="ember-btn" aria-disabled="true">
+          Disabled Link
+        </a>
+      </p>
+    </section>
+
+    <hr>
+
+    <!-- CARDS -->
+
+    <section>
+      <h2>Cards</h2>
+
+      <article class="ember-card">
+
+        <img
+          class="ember-card__image"
+          src="https://placehold.co/600x300"
+          alt="Cordless drill"
+        >
+
+        <header class="ember-card__header">
+          <h3>Cordless Drill</h3>
+        </header>
+
+        <div class="ember-card__body">
+          <p>Borrow it for up to 7 days.</p>
+        </div>
+
+        <footer class="ember-card__footer">
+          Available now
+        </footer>
+
+      </article>
+
+      <article class="ember-card ember-card--elevated">
+
+        <header class="ember-card__header">
+          <h3>Elevated Card</h3>
+        </header>
+
+        <div class="ember-card__body">
+          <p>This card demonstrates the elevated variant.</p>
+        </div>
+
+        <footer class="ember-card__footer">
+          Premium Design
+        </footer>
+
+      </article>
+
+      <article class="ember-card ember-text-muted">
+        <div class="ember-card__body">
+          <h3>Utility Test</h3>
+          <p>This card demonstrates the muted text utility.</p>
+        </div>
+      </article>
+
+    </section>
+
+    <hr>
+
+    <!-- ALERTS -->
+
+    <section>
+      <h2>Alerts</h2>
+
+      <div class="ember-alert ember-alert--info">
+        <p class="ember-alert__title">Heads up</p>
+        <p>Your plot renews next month.</p>
+      </div>
+
+      <div class="ember-alert ember-alert--warning">
+        <p class="ember-alert__title">Warning</p>
+        <p>Only 2 spots left.</p>
+      </div>
+
+    </section>
+
+    <hr>
+
+    <!-- UTILITIES -->
+
+    <section>
+      <h2>Utilities</h2>
+
+      <p class="ember-text-muted">
+        This text uses the muted text utility.
+      </p>
+
+      <div class="ember-p-md">
+        This element uses the medium padding utility.
+      </div>
+
+      <div class="ember-flex ember-gap-sm">
+        <button class="ember-btn">First</button>
+        <button class="ember-btn ember-btn--secondary">Second</button>
+      </div>
+
+      <p class="ember-mt-lg">
+        This paragraph has additional top spacing.
+      </p>
+
+    </section>
+
+  </main>
+
+</body>
+</html>

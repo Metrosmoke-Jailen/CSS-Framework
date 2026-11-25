@@ -1,0 +1,138 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="A sample landing page built with Ember CSS.">
+  <title>Ember Studio | Real-World Test</title>
+  <link rel="stylesheet" href="ember.css">
+</head>
+
+<body>
+  <header>
+    <nav aria-label="Main navigation">
+      <a href="#" aria-label="Ember Studio home">Ember Studio</a>
+
+      <ul>
+        <li><a href="#features">Features</a></li>
+        <li><a href="#pricing">Pricing</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+
+      <a class="ember-btn ember-btn--secondary ember-btn--small"
+         href="#pricing">
+        Get Started
+      </a>
+    </nav>
+  </header>
+
+  <main>
+    <section aria-labelledby="hero-title">
+      <p class="ember-text-muted">DESIGNED WITH EMBER CSS</p>
+
+      <h1 id="hero-title">Build something meaningful.</h1>
+
+      <p>
+        A clean, flexible foundation for creating accessible,
+        responsive, and beautiful web experiences.
+      </p>
+
+      <div class="ember-flex ember-gap-sm">
+        <a class="ember-btn" href="#features">Explore Features</a>
+        <a class="ember-btn ember-btn--secondary" href="#contact">
+          Learn More
+        </a>
+      </div>
+    </section>
+
+    <section id="features" aria-labelledby="features-title">
+      <h2 id="features-title">What makes Ember different?</h2>
+
+      <div class="ember-card ember-card--elevated">
+        <div class="ember-card__header">
+          <h3>Accessible by design</h3>
+        </div>
+
+        <div class="ember-card__body">
+          <p>
+            Semantic HTML, visible keyboard focus, readable typography,
+            and thoughtful interaction states.
+          </p>
+          <span class="ember-badge ember-badge--accent">Accessibility</span>
+        </div>
+
+        <footer class="ember-card__footer">
+          Built with accessibility in mind.
+        </footer>
+      </div>
+
+      <div class="ember-card">
+        <div class="ember-card__header">
+          <h3>Consistent design</h3>
+        </div>
+
+        <div class="ember-card__body">
+          <p>
+            Reusable design tokens keep colors, spacing, typography,
+            and visual details consistent.
+          </p>
+          <span class="ember-badge">Design Tokens</span>
+        </div>
+      </div>
+    </section>
+
+    <section id="pricing" aria-labelledby="pricing-title">
+      <h2 id="pricing-title">Simple pricing</h2>
+
+      <article class="ember-card">
+        <div class="ember-card__header">
+          <h3>Starter</h3>
+          <p class="ember-text-muted">For small projects</p>
+        </div>
+
+        <div class="ember-card__body">
+          <p><strong>$0</strong> / month</p>
+          <ul>
+            <li>Core components</li>
+            <li>Design tokens</li>
+            <li>Responsive foundations</li>
+          </ul>
+        </div>
+
+        <div class="ember-card__footer">
+          <a class="ember-btn" href="#contact">Choose Starter</a>
+        </div>
+      </article>
+    </section>
+
+    <section id="contact" aria-labelledby="contact-title">
+      <h2 id="contact-title">Stay connected</h2>
+
+      <div class="ember-alert ember-alert--info" role="status">
+        <p class="ember-alert__title">Welcome to Ember Studio</p>
+        <p>Explore the framework and start building your next project.</p>
+      </div>
+
+      <form>
+        <label for="email">Email address</label>
+        <input
+          type="email"
+          id="email"
+          name="email"
+          placeholder="you@example.com"
+          required
+        >
+
+        <button class="ember-btn" type="submit">Subscribe</button>
+      </form>
+    </section>
+  </main>
+
+  <footer>
+    <p class="ember-text-muted">
+      © 2026 Ember Studio. Built with Ember CSS.
+    </p>
+  </footer>
+</body>
+</html>

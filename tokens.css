@@ -1,0 +1,261 @@
+:root {
+  color-scheme: light dark;
+
+  /* TYPE SCALE: 1.25 RATIO */
+
+  --type-base: 1rem;
+  --type-ratio: 1.25;
+
+  --text-xs: 0.75rem;
+  --text-sm: 0.8rem;
+  --text-md: 1rem;
+  --text-lg: 1.25rem;
+  --text-xl: 1.563rem;
+  --text-2xl: 1.953rem;
+  --text-3xl: 2.441rem;
+
+
+  /* SPACING SCALE */
+
+  --space-1: 0.25rem;
+  --space-2: 0.375rem;
+  --space-3: 0.5625rem;
+  --space-4: 0.875rem;
+  --space-5: 1.3125rem;
+  --space-6: 2rem;
+  --space-7: 3rem;
+  --space-8: 4.5rem;
+  --space-9: 6.75rem;
+
+
+  /* NEUTRAL COLOR RAMP */
+
+  --neutral-0: oklch(99% 0.006 285);
+  --neutral-50: oklch(96% 0.008 285);
+  --neutral-100: oklch(91% 0.01 285);
+  --neutral-200: oklch(82% 0.014 285);
+  --neutral-300: oklch(70% 0.018 285);
+  --neutral-400: oklch(57% 0.02 285);
+  --neutral-500: oklch(45% 0.021 285);
+  --neutral-600: oklch(35% 0.022 285);
+  --neutral-700: oklch(27% 0.022 285);
+  --neutral-800: oklch(20% 0.02 285);
+  --neutral-900: oklch(15% 0.018 285);
+  --neutral-950: oklch(11% 0.016 285);
+
+
+  /* PRIMARY ACCENT: ANTIQUE GOLD */
+
+  --accent-100: oklch(94% 0.055 85);
+  --accent-300: oklch(84% 0.09 83);
+  --accent-500: oklch(75% 0.105 82);
+  --accent-700: oklch(56% 0.09 78);
+  --accent-900: oklch(34% 0.055 75);
+
+
+  /* SECONDARY ACCENT: MYSTICAL PLUM */
+
+  --plum-300: oklch(72% 0.075 315);
+  --plum-500: oklch(55% 0.085 315);
+  --plum-700: oklch(38% 0.07 315);
+
+
+  /* SEMANTIC COLORS */
+
+  --success-light: oklch(88% 0.09 150);
+  --success-dark: oklch(73% 0.12 150);
+
+  --warning-light: oklch(87% 0.11 85);
+  --warning-dark: oklch(78% 0.13 82);
+
+  --danger-light: oklch(66% 0.18 25);
+  --danger-dark: oklch(75% 0.15 25);
+
+  --info-light: oklch(62% 0.12 245);
+  --info-dark: oklch(78% 0.10 245);
+
+
+  /* SEMANTIC ROLE TOKENS */
+
+  --color-bg:
+    light-dark(var(--neutral-0), var(--neutral-950));
+
+  --color-surface:
+    light-dark(var(--neutral-0), var(--neutral-900));
+
+  --color-surface-raised:
+    light-dark(var(--neutral-50), var(--neutral-800));
+
+  --color-fg:
+    light-dark(var(--neutral-900), var(--neutral-50));
+
+  --color-fg-muted:
+    light-dark(var(--neutral-500), var(--neutral-300));
+
+  --color-fg-subtle:
+    light-dark(var(--neutral-400), var(--neutral-400));
+
+  --color-border:
+    light-dark(
+      oklch(85% 0.012 285),
+      oklch(30% 0.02 285)
+    );
+
+  --color-border-strong:
+    light-dark(var(--neutral-400), var(--neutral-600));
+
+  --color-accent:
+    light-dark(var(--accent-700), var(--accent-300));
+
+  --color-accent-strong:
+    light-dark(var(--accent-900), var(--accent-100));
+
+  --color-accent-soft:
+    light-dark(
+      oklch(94% 0.035 85),
+      oklch(25% 0.035 82)
+    );
+
+  --color-on-accent:
+    light-dark(var(--neutral-0), var(--neutral-950));
+
+  --color-plum:
+    light-dark(var(--plum-700), var(--plum-300));
+
+  --color-success:
+    light-dark(var(--success-light), var(--success-dark));
+
+  --color-warning:
+    light-dark(var(--warning-light), var(--warning-dark));
+
+  --color-danger:
+    light-dark(var(--danger-light), var(--danger-dark));
+
+  --color-info:
+    light-dark(var(--info-light), var(--info-dark));
+
+
+  /* TYPOGRAPHY ROLES */
+
+  --font-body: "DM Sans", system-ui, sans-serif;
+  --font-display: "Playfair Display", Georgia, serif;
+
+  --line-height-tight: 1.12;
+  --line-height-body: 1.65;
+
+  --letter-spacing-tight: -0.04em;
+  --letter-spacing-wide: 0.14em;
+
+
+  /* BORDER RADIUS */
+
+  --radius-sm: 0.5rem;
+  --radius-md: 0.875rem;
+  --radius-lg: 1.25rem;
+  --radius-pill: 999px;
+
+
+  /* SHADOWS */
+
+  --opacity-disabled: 0.5;
+
+  --shadow-card:
+    0 14px 36px oklch(0% 0 0 / 0.10);
+
+  --shadow-float:
+    0 24px 70px oklch(0% 0 0 / 0.24);
+
+
+  /* MOTION TOKENS */
+
+  --duration-instant: 100ms;
+  --duration-reduced: 0.01ms;
+  --duration-fast: 160ms;
+  --duration-normal: 240ms;
+  --duration-slow: 420ms;
+
+  --ease-standard: cubic-bezier(0.2, 0, 0, 1);
+  --ease-emphasized: cubic-bezier(0.2, 0.8, 0.2, 1);
+  --ease-enter: cubic-bezier(0, 0, 0.2, 1);
+  --ease-exit: cubic-bezier(0.4, 0, 1, 1);
+
+
+  /* LAYOUT TOKENS */
+  --content-max: 76rem;
+  --heading-max: 43rem;
+  --page-gutter: clamp(1.25rem, 5vw, 4rem);
+
+  --header-height: 5rem;
+  --brand-mark-size: 2.5rem;
+  --eyebrow-line-width: 1.5rem;
+  --control-height: 3.25rem;
+
+  /* HERO */
+  --hero-text-max: 36rem;
+  --hero-title-max: 5.25rem;
+  --hero-art-height-wide: 36rem;
+  --hero-art-height-small: 25rem;
+  --halo-size: 25rem;
+  --book-width: 18rem;
+  --book-aspect: 11 / 14;
+  --book-rotation: -6deg;
+  --book-sigil-size: 4rem;
+  --orbit-offset: 3.5rem;
+
+  /* CARDS */
+  --card-min-width: 16rem;
+  --feature-icon-size: 3rem;
+  --item-art-height: 13rem;
+  --item-orbit-outer: 10rem;
+  --item-orbit-inner: 7.5rem;
+  --item-symbol-size: 4rem;
+
+  /* SIGN-UP AND FOOTER */
+  --signup-content-max: 42rem;
+  --decoration-size: 19rem;
+  --form-field-min: 18rem;
+  --footer-column-min: 13rem;
+
+  /* ADDITIONAL SURFACE TOKENS */
+  --color-hero-glow: oklch(39% 0.055 78 / 0.16);
+  --color-plum-glow: oklch(40% 0.07 315 / 0.16);
+  --shadow-glow: 0 0 5rem oklch(75% 0.105 82 / 0.12);
+}
+
+
+/* =========================================
+   THEME CONTROLS
+   ========================================= */
+
+:root[data-theme="light"],
+[data-theme="light"] {
+  color-scheme: light;
+}
+
+:root[data-theme="dark"],
+[data-theme="dark"] {
+  color-scheme: dark;
+}
+
+
+/* =========================================
+   ACCESSIBILITY: REDUCED MOTION
+   ========================================= */
+
+@media (prefers-reduced-motion: reduce) {
+  :root {
+    --duration-instant: 0ms;
+    --duration-fast: 0ms;
+    --duration-normal: 0ms;
+    --duration-slow: 0ms;
+  }
+
+  *,
+  *::before,
+  *::after {
+    scroll-behavior: auto !important;
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+  }
+}
