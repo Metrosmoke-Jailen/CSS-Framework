@@ -1,0 +1,54 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <title>Web Components</title>
+
+    <link rel="stylesheet" href="ember.css">
+    <script type="module" src="elements/fw-card.js"></script>
+</head>
+
+<body>
+
+<!-- Standard Card -->
+
+<fw-card>
+
+    <h3 slot="header">
+        Cordless drill
+    </h3>
+
+    <p>
+        Borrow it for up to 7 days.
+    </p>
+
+    <span slot="footer">
+        Available now
+    </span>
+
+</fw-card>
+
+
+<!-- Elevated Card -->
+
+<fw-card variant="elevated">
+
+    <h3 slot="header">
+        Electric screwdriver
+    </h3>
+
+    <p>
+        Borrow it for up to 3 days.
+    </p>
+
+    <span slot="footer">
+        Featured equipment
+    </span>
+
+</fw-card>
+
+</body>
+</html>
